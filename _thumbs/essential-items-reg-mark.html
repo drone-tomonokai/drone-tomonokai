@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&display=block">
+<style>
+html,body{margin:0}
+.c{position:relative;width:1200px;height:675px;overflow:hidden;background:#FFF3EC;font-family:"Zen Kaku Gothic New",sans-serif;color:#000}
+.ttl{position:absolute;left:56px;top:44px;font-weight:900;font-size:44px;letter-spacing:.02em}
+.ttl::before{content:"";display:block;width:56px;height:6px;background:#FF4F00;margin-bottom:18px}
+.cards{position:absolute;left:56px;right:56px;top:164px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cd{position:relative;background:#fff;border:4px solid #000;border-radius:22px;height:370px;box-sizing:border-box;padding:24px 30px;text-align:center}
+.mk{display:inline-grid;place-items:center;width:56px;height:56px;border-radius:50%;font-weight:900;font-size:32px;color:#fff}
+.ok .mk{background:#000}
+.ng .mk{background:#FF4F00}
+.cd svg{display:block;margin:8px auto 4px;width:300px;height:150px}
+.h{font-weight:900;font-size:28px;margin-top:6px}
+.d{margin-top:8px;font-weight:700;font-size:19px;line-height:1.6;color:#333}
+.goal{position:absolute;left:56px;right:56px;bottom:30px;display:flex;justify-content:center;align-items:center;gap:16px;font-weight:900;font-size:24px}
+.goal span{background:#000;color:#fff;border-radius:999px;padding:10px 26px}
+</style></head><body>
+<div class="c">
+  <div class="ttl">登録記号は、どこに表示する？</div>
+  <div class="cards">
+    <div class="cd ok"><span class="mk">○</span>
+      <svg viewBox="0 0 300 150" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M95 52L55 28M205 52l40-24M95 98l-40 24M205 98l40 24"/>
+        <circle cx="45" cy="22" r="20"/><circle cx="255" cy="22" r="20"/><circle cx="45" cy="128" r="20"/><circle cx="255" cy="128" r="20"/>
+        <rect x="90" y="40" width="120" height="70" rx="16"/>
+        <rect x="108" y="62" width="84" height="26" rx="4" fill="#FF4F00" stroke="#FF4F00"/>
+      </svg>
+      <div class="h">外から見える胴体</div>
+      <div class="d">工具を使わないと<br>外せない場所に表示する</div></div>
+    <div class="cd ng"><span class="mk">×</span>
+      <svg viewBox="0 0 300 150" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M95 52L55 28M205 52l40-24M95 98l-40 24M205 98l40 24"/>
+        <circle cx="45" cy="22" r="20"/><circle cx="255" cy="22" r="20"/><circle cx="45" cy="128" r="20"/><circle cx="255" cy="128" r="20"/>
+        <rect x="90" y="40" width="120" height="70" rx="16"/>
+        <rect x="160" y="48" width="42" height="54" rx="6" stroke-dasharray="8 7"/>
+        <rect x="166" y="66" width="30" height="18" rx="3" fill="#FF4F00" stroke="#FF4F00"/>
+      </svg>
+      <div class="h">バッテリーのふたなど</div>
+      <div class="d">工具なしで外せる場所には<br>表示できない</div></div>
+  </div>
+  <div class="goal"><span>25kg未満の機体</span>文字の高さ3mm以上・シールや油性ペンなど消えにくい方法で</div>
+</div></body></html>
