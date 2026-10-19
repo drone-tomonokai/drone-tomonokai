@@ -1,4 +1,4 @@
-/* 楽天ROOM：商品カード／ROOM誘導ボックス／PR表記。緑（--line）はLINE専用のため、ボタンは黒 */
+/* 楽天ROOM・楽天アフィリエイト：商品カード／PR表記。緑（--line）はLINE専用のため、ボタンは黒 */
 
 .pr-label{
   display:inline-flex;align-items:center;justify-content:center;flex:none;
@@ -6,8 +6,6 @@
   color:var(--ink-2);border:1px solid var(--rule-2);background:#fff;
   padding:4px 8px;border-radius:5px;
 }
-.pr-note{display:flex;gap:10px;align-items:flex-start;margin:-20px 0 36px;font-size:13.5px;color:var(--ink-2);line-height:1.9;max-width:62em}
-.pr-note .pr-label{margin-top:3px}
 
 /* ---- 商品カード ---- */
 .room-item{
@@ -37,25 +35,7 @@
 .prose .room-item .room-name{color:#000}
 .prose .room-item .room-btn{color:#fff}
 
-/* ---- おすすめページ ---- */
-.room-group-h{font-size:clamp(20px,2.6vw,24px);margin:64px 0 20px;padding-top:22px;border-top:2px solid #000}
-.room-pick-h{font-size:clamp(24px,3vw,30px);margin:88px 0 8px}
-.room-pick-h+.room-group-h{margin-top:24px}
-.room-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-@media (max-width:900px){.room-grid{grid-template-columns:1fr}}
+/* 記事の最後の「この記事で紹介したアイテム」 */
 .col-related{margin-top:56px}
 .col-related-h{font-size:20px;margin-bottom:18px;display:flex;align-items:center;gap:10px}
 .col-related .room-item+.room-item{margin-top:14px}
-
-/* ---- ROOM誘導ボックス ---- */
-.room-banner{
-  position:relative;margin-top:48px;padding:36px 40px;
-  display:flex;align-items:center;justify-content:space-between;gap:20px 32px;flex-wrap:wrap;
-  background:var(--paper-2);border-radius:var(--r);
-}
-.room-banner .pr-label{position:absolute;top:14px;right:14px}
-.room-banner-txt{flex:1 1 320px;padding-right:30px}
-.room-banner-h{font-family:var(--f-head);font-weight:900;font-size:21px;line-height:1.6}
-.room-banner-sub{font-size:14px;color:var(--ink-2);margin-top:6px}
-.room-banner .room-btn{margin-top:0;padding:15px 32px;font-size:15px}
-@media (max-width:560px){.room-banner{padding:32px 22px}.room-banner .room-btn{width:100%;justify-content:center}}

@@ -13,9 +13,6 @@
     <nav class="f-nav" aria-label="サイト内リンク">
       <a href="{{ '/' | relative_url }}">トップ</a>
       <a href="{{ '/columns/' | relative_url }}">コラム</a>
-      {%- if site.rakuten_room_url != "" or site.data.room_items.size > 0 %}
-      <a href="{{ '/items/' | relative_url }}">おすすめアイテム</a>
-      {%- endif %}
       <a href="{{ site.line_url }}" target="_blank" rel="noopener" data-cta="footer">LINEで特典を受け取る</a>
       <a href="{{ '/columns/feed.xml' | relative_url }}">RSS</a>
     </nav>

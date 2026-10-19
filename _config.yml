@@ -13,7 +13,7 @@ baseurl: ""
 line_url: https://lin.ee/XqapxDi
 
 # 楽天ROOM：自分のROOMページのURL（例：https://room.rakuten.co.jp/room_xxxxxxxxxx/items）
-# 空のままだと、ROOMへの誘導ボックスとヘッダーの「おすすめ」リンクは表示されません
+# トップと各コラムの最後のSNS欄に「楽天ROOM（PR）」として出ます。空のままだと表示されません（2026-10-19 に「おすすめアイテム」ページを廃止）
 rakuten_room_url: "https://room.rakuten.co.jp/room_584cfed81d/items"
 
 # 楽天アフィリエイトID（楽天アフィリエイトの管理画面で確認できるもの）。記事内の商品カード（_data/rakuten_items.yml）のリンクに使われます
