@@ -24,6 +24,11 @@ rakuten_affiliate_id: "1ebce8ca.1fe2f85d.1ebce8cb.79468e10"
 # 空のままだとアナリティクスは読み込まれません。入れるとプライバシーポリシーの記載どおり計測が始まります
 google_analytics_id: "G-VMJ4M4E86T"
 
+# Googleアドセンスのサイト運営者ID（例："ca-pub-0000000000000000"）
+# 入れると、全ページに確認用のメタタグ、コラムの記事ページにだけ広告のコードが入ります（_includes/adsense.html）。
+# 空にすると両方とも出なくなります。ads.txt（サイト直下）のIDも合わせて直すこと
+adsense_client: "ca-pub-4174847427845119"
+
 # コラム記事のURL： /columns/2026/10/chiriin-map-airspace/ の形になります
 permalink: /columns/:year/:month/:title/
 

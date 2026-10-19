@@ -1,0 +1,9 @@
+{%- comment -%} Googleアドセンス。_config.yml の adsense_client が空なら何も出さない。確認用のメタタグは全ページ、広告のコードはコラムの記事ページ（layout: column）だけ {%- endcomment -%}
+{%- assign ads = site.adsense_client | default: "" -%}
+{%- assign adslen = ads | size -%}
+{%- if adslen > 0 %}
+<meta name="google-adsense-account" content="{{ ads }}">
+{%- if page.layout == "column" %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ ads }}" crossorigin="anonymous"></script>
+{%- endif %}
+{%- endif %}
