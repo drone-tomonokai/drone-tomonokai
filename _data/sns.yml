@@ -16,10 +16,12 @@
 - name: X
   url: "https://x.com/drone_f_club"
   handle: "@drone_f_club"
-  text: 平日を中心に、初心者のつまずきや用語、週末に飛ばすときのコツを短く発信しています。
+  text: 平日の毎日、国内のドローンの最新ニュースを、初心者向けに短く発信しています。
 
+# Instagram は当面投稿しないため、url を空にして表示を止めている（2026-10-23〜）。
+# 再開するときは url に "https://www.instagram.com/drone_friendclub/" を戻す。
 - name: Instagram
-  url: "https://www.instagram.com/drone_friendclub/"
+  url: ""
   handle: "@drone_friendclub"
   text: 初心者向けのポイントを、見返しやすい画像にまとめて投稿しています。
 
