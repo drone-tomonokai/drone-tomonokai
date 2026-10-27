@@ -16,7 +16,7 @@
 - name: X
   url: "https://x.com/drone_f_club"
   handle: "@drone_f_club"
-  text: 平日の毎日、国内のドローンの最新ニュースを、初心者向けに短く発信しています。
+  text: ドローン関連のニュースやあれこれ気になったことを発信しています。
 
 # Instagram は当面投稿しないため、url を空にして表示を止めている（2026-10-23〜）。
 # 再開するときは url に "https://www.instagram.com/drone_friendclub/" を戻す。
