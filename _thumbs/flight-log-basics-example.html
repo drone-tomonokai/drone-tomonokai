@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Outfit:wght@600;800&display=block">
+<style>
+html,body{margin:0}
+.c{position:relative;width:1200px;height:675px;overflow:hidden;background:#FFF3EC;font-family:"Zen Kaku Gothic New",sans-serif;color:#000}
+.ttl{position:absolute;left:56px;top:44px;font-weight:900;font-size:44px;letter-spacing:.02em}
+.ttl::before{content:"";display:block;width:56px;height:6px;background:#FF4F00;margin-bottom:18px}
+table{position:absolute;left:56px;right:56px;top:160px;width:1088px;border-collapse:collapse;background:#fff;border:4px solid #000;table-layout:fixed}
+th,td{border:2px solid #000;text-align:center;padding:10px 4px;line-height:1.35}
+th{font-weight:900;font-size:19px;background:#f2f2f2;height:58px}
+td{font-weight:700;font-size:22px;height:92px}
+td.num{font-family:"Outfit",sans-serif;font-weight:800;font-size:28px}
+td.hl{background:#FFE3D4}
+.notes{position:absolute;left:56px;right:56px;top:396px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.n{background:#fff;border:4px solid #000;border-radius:22px;padding:18px 20px;box-sizing:border-box;height:198px}
+.n b{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#FF4F00;color:#fff;font-weight:900;font-size:24px;margin-bottom:8px}
+.n .h{font-weight:900;font-size:26px;line-height:1.35}
+.n .d{margin-top:6px;font-weight:700;font-size:19px;line-height:1.55;color:#333}
+.mark{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#FF4F00;color:#fff;font-size:16px;font-weight:900;vertical-align:middle;margin-left:4px}
+.foot{position:absolute;right:56px;bottom:22px;font-weight:700;font-size:18px;color:#333}
+</style></head><body>
+<div class="c">
+  <div class="ttl">飛行記録（様式1）の1行の書き方の例</div>
+  <table>
+    <colgroup><col style="width:12%"><col style="width:10%"><col style="width:12%"><col style="width:17%"><col style="width:9%"><col style="width:9%"><col style="width:9%"><col style="width:9%"><col style="width:13%"></colgroup>
+    <tr><th>飛行<br>年月日</th><th>操縦者<br>の氏名</th><th>飛行概要</th><th>離陸場所／<br>着陸場所</th><th>離陸<br>時刻<span class="mark">1</span></th><th>着陸<br>時刻<span class="mark">1</span></th><th>飛行<br>時間<span class="mark">2</span></th><th>総飛行<br>時間<span class="mark">3</span></th><th>安全に影響<br>のあった事項</th></tr>
+    <tr><td class="num" style="font-size:24px">2026.11.03</td><td>（氏名）</td><td>趣味<br>（練習）</td><td style="font-size:19px">○○県○○市<br>○○練習場</td><td class="num hl">10:00</td><td class="num hl">10:12</td><td class="num hl">0:12</td><td class="num hl">3:57</td><td>なし</td></tr>
+  </table>
+  <div class="notes">
+    <div class="n"><b>1</b><div class="h">時刻は24時間制</div><div class="d">日本時間で、<br>1分単位で書く</div></div>
+    <div class="n"><b>2</b><div class="h">飛行時間</div><div class="d">離陸から着陸まで。<br>1分未満は1分に切り上げ</div></div>
+    <div class="n"><b>3</b><div class="h">総飛行時間</div><div class="d">前回の総飛行時間に、<br>今回の飛行時間を足す</div></div>
+  </div>
+  <div class="foot">数字は架空のものです</div>
+</div></body></html>
